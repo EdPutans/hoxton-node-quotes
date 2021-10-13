@@ -1,20 +1,8 @@
-.App {
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,16 +11,36 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container{
+  max-width: 400px;
+}
+p, h1, h3{
+  color: #282c34;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.photo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.quote-text{
+  font-size: 15px;
+}
+.quote-person{
+  align-self: flex-end;
+  font-size: 10px;
+}
+
+
+.refetch-button{
+  background-color: rgb(61, 173, 207);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.refetch-button:hover {
+  background-color: rgb(23, 67, 80);
 }
